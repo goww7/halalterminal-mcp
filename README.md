@@ -65,7 +65,15 @@ Sign up: https://api.halalterminal.com
 
 ## Related projects
 
-- **[halalterminal-claude-skills](https://github.com/goww7/halalterminal-claude-skills)** — Claude Code plugin with curated skills, slash commands, and a portfolio-builder subagent that wraps this MCP server with task-specific guidance.
+Open-source tools that build on top of this API — different surfaces, same data:
+
+| Project | What it is | License |
+|---|---|---|
+| [**halalterminal-claude-skills**](https://github.com/goww7/halalterminal-claude-skills) | Claude Code plugin — curated skills, slash commands, and a portfolio-builder subagent that wraps this MCP server with task-specific guidance. | Apache-2.0 |
+| [**yassir-oss**](https://github.com/goww7/yassir-oss) | Open-source ReAct agent for financial research and Shariah-compliant investing — CLI + web UI, supports OpenAI / Anthropic / local LLMs. | Apache-2.0 |
+| [**halal-discord-bot**](https://github.com/goww7/halal-discord-bot) | Discord bot — `/halal AAPL`, `/portfolio`, `/trending` slash commands. | MIT |
+| [**halal-portfolio-tracker**](https://github.com/goww7/halal-portfolio-tracker) | Next.js 14 app — enter holdings, get per-stock compliance + portfolio halal % + purification owed. One-click Vercel deploy. | MIT |
+| [**halal-pine**](https://github.com/goww7/halal-pine) | TradingView Pine Script v5 indicator that overlays compliance status on charts. Refreshed daily from this API. | MIT |
 
 ## License
 
