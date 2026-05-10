@@ -42,27 +42,29 @@ claude mcp add --transport sse halalterminal \
 
 ## Claude Desktop
 
-Edit `claude_desktop_config.json` (Settings → Developer → Edit Config) and add the bridge below. Claude Desktop currently expects stdio, so we use the official SSE → stdio relay.
+Edit `claude_desktop_config.json` (Settings → Developer → Edit Config) and add the entry below. Claude Desktop currently expects stdio, so we use the official `@halalterminal/mcp` package as a stdio↔SSE bridge.
 
 ```json
 {
   "mcpServers": {
     "halalterminal": {
       "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-everything-sse-bridge",
-        "https://mcp.halalterminal.com/sse"
-      ],
-      "env": {
-        "MCP_HEADER_X_API_KEY": "ht_yourkey"
-      }
+      "args": ["-y", "@halalterminal/mcp"],
+      "env": { "HALALTERMINAL_API_KEY": "ht_yourkey" }
     }
   }
 }
 ```
 
-If your client doesn't support that bridge, use the snippet under **Custom stdio bridge** below.
+Prefer a generic bridge? Both of these work too:
+
+```json
+{ "command": "npx", "args": ["-y", "supergateway", "--sse", "https://mcp.halalterminal.com/sse", "--header", "X-API-Key:ht_yourkey"] }
+```
+
+```json
+{ "command": "npx", "args": ["-y", "mcp-proxy", "--sse-url", "https://mcp.halalterminal.com/sse", "--header", "X-API-Key=ht_yourkey"] }
+```
 
 ---
 
@@ -99,53 +101,23 @@ Windsurf → Settings → Cascade → MCP servers:
 
 ---
 
-## Custom stdio bridge
+## Stdio-only clients
 
-For any MCP client that requires stdio, drop this 20-line bridge alongside your config and point the client at it.
-
-`halalterminal-mcp.mjs`:
-
-```js
-import { SSEClientTransport } from "@modelcontextprotocol/sdk/client/sse.js";
-import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
-
-const API_KEY = process.env.HALALTERMINAL_API_KEY;
-const sseUrl  = `https://mcp.halalterminal.com/sse?api_key=${API_KEY}`;
-
-const sse   = new SSEClientTransport(new URL(sseUrl), {
-  requestInit: { headers: { "X-API-Key": API_KEY } }
-});
-const stdio = new StdioServerTransport();
-
-await sse.start();
-await stdio.start();
-
-stdio.onmessage = (m) => sse.send(m);
-sse.onmessage   = (m) => stdio.send(m);
-sse.onclose     = () => process.exit(0);
-stdio.onclose   = () => process.exit(0);
-sse.onerror     = (e) => { console.error("SSE error:", e); process.exit(1); };
-```
-
-Install once:
-
-```bash
-npm install -g @modelcontextprotocol/sdk
-```
-
-Use it from any stdio-only client config:
+For any MCP client that requires stdio, the `@halalterminal/mcp` package IS the bridge — point the client at it:
 
 ```json
 {
   "mcpServers": {
     "halalterminal": {
-      "command": "node",
-      "args": ["/absolute/path/to/halalterminal-mcp.mjs"],
+      "command": "npx",
+      "args": ["-y", "@halalterminal/mcp"],
       "env": { "HALALTERMINAL_API_KEY": "ht_yourkey" }
     }
   }
 }
 ```
+
+Source: https://github.com/goww7/halalterminal-mcp/blob/main/bin/cli.mjs (Apache-2.0, ~50 lines).
 
 ---
 
