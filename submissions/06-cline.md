@@ -11,7 +11,7 @@
 1. **GitHub repo URL** — `https://github.com/goww7/halalterminal-mcp`
 2. **400×400 PNG logo** — must exist as a file you can upload to the GitHub issue. If we don't have one yet, generate from the OG image:
    ```bash
-   curl -sL https://halalterminal.com/og.png -o /tmp/og.png
+   curl -sL https://halalterminal.com/android-chrome-192x192.png -o /tmp/og.png
    # Then resize to 400×400 in any image tool, or:
    magick /tmp/og.png -resize 400x400^ -gravity center -extent 400x400 /tmp/halalterminal-400.png
    ```

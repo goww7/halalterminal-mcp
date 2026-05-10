@@ -91,7 +91,7 @@ Free tier — no credit card. Get a key: https://api.halalterminal.com
 | MCP name (registry) | `com.halalterminal/mcp` |
 | Endpoint (SSE) | `https://mcp.halalterminal.com/sse` |
 | License | `Apache-2.0` |
-| Logo URL (use OG image until 400×400 PNG is shipped) | `https://halalterminal.com/og.png` |
+| Logo URL (use OG image until 400×400 PNG is shipped) | `https://halalterminal.com/android-chrome-192x192.png` |
 
 ---
 

@@ -18,7 +18,7 @@
 | **NPM** | `@halalterminal/mcp` |
 | **Categories** | `Finance` (primary), `Productivity` (secondary) |
 | **Tags** | `halal`, `shariah`, `islamic-finance`, `stock-screening`, `etf-screening`, `zakat`, `aaoifi`, `djim`, `ftse-shariah`, `msci-islamic`, `sp-shariah` |
-| **Logo** | `https://halalterminal.com/og.png` |
+| **Logo** | `https://halalterminal.com/android-chrome-192x192.png` |
 | **Author** | `Yassir <yassir@halalterminal.com>` |
 
 ## GitHub issue alternative (paste)

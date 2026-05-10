@@ -18,7 +18,7 @@
 | **NPM package** | `@halalterminal/mcp` |
 | **Install command** | `npx -y @halalterminal/mcp` |
 | **Required env** | `HALALTERMINAL_API_KEY` |
-| **Logo URL** | `https://halalterminal.com/og.png` |
+| **Logo URL** | `https://halalterminal.com/android-chrome-192x192.png` |
 | **Author** | `Yassir` |
 
 ## Cursor-specific install snippet (paste in description)

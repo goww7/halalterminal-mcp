@@ -18,7 +18,7 @@
 | **License** | `Apache-2.0` |
 | **Author** | `Yassir` |
 | **Contact** | `yassir@halalterminal.com` |
-| **Logo** | `https://halalterminal.com/og.png` (400×400 preferred — generate a PNG before submitting if site only serves OG) |
+| **Logo** | `https://halalterminal.com/android-chrome-192x192.png` (400×400 preferred — generate a PNG before submitting if site only serves OG) |
 | **Categories** | `Finance`, `Investing`, `Compliance`, `Research` |
 | **Tags** | (paste keyword set from `copy-bank.md` — primary + methodologies + adjacent) |
 | **Transports** | `SSE`, `stdio` |

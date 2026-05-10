@@ -20,7 +20,7 @@ MCPMarket aggregates from multiple upstream sources, so once steps 01 (Official 
 
 | Field | Value |
 |---|---|
-| **Featured image** | A 1200×630 OG-style banner if you have one; else `https://halalterminal.com/og.png` |
+| **Featured image** | A 1200×630 OG-style banner if you have one; else `https://halalterminal.com/android-chrome-192x192.png` |
 | **Categories** | `Finance`, `Compliance`, `Research` |
 | **Tags** | (paste keyword set from `copy-bank.md`) |
 | **Why it's notable** | (paste **Elevator ≤280 chars**) |

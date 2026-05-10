@@ -67,7 +67,7 @@ metadata:
   maintainer:
     name: Yassir
     email: yassir@halalterminal.com
-  logo: https://halalterminal.com/og.png
+  logo: https://halalterminal.com/android-chrome-192x192.png
 ```
 
 ## docker-pr-body.md
