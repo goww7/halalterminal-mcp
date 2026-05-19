@@ -1,7 +1,7 @@
 {
   "name": "@halalterminal/mcp",
   "version": "1.0.0",
-  "description": "Official Halal Terminal MCP server — Shariah-compliant stock and ETF screening across AAOIFI, DJIM, FTSE, MSCI and S&P methodologies, plus portfolio audit, zakat, dividend purification, market data, news and SEC filings, for Claude, Cursor, Windsurf and any MCP-compatible AI agent.",
+  "description": "Halal Terminal MCP server — 22 tools: screen stocks/ETFs across 5 Shariah methodologies (AAOIFI, DJIM, FTSE, MSCI, S&P), audit portfolios, calculate zakat and purification, fetch market data and SEC filings. For Claude, Cursor, Windsurf and any MCP client.",
   "mcpName": "com.halalterminal/mcp",
   "type": "module",
   "license": "Apache-2.0",
