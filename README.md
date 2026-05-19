@@ -5,23 +5,27 @@
 [![MCP](https://img.shields.io/badge/protocol-MCP-purple)](https://modelcontextprotocol.io)
 [![Powered by Halal Terminal](https://img.shields.io/badge/powered%20by-Halal%20Terminal-1f6feb)](https://halalterminal.com)
 
-The official **Model Context Protocol** server for [Halal Terminal](https://halalterminal.com). Screen any stock or ETF for **Shariah (Islamic) compliance** across **5 methodologies** — AAOIFI, DJIM, FTSE, MSCI, S&P — audit portfolios, calculate **zakat** and **dividend purification**, and pull market data, news and SEC filings, all from inside any MCP-compatible AI agent: **Claude Desktop, Claude Code, Cursor, Windsurf, Cline, Continue, Zed, Goose**, and more.
+The official **Model Context Protocol** server for [Halal Terminal](https://halalterminal.com). Give your AI agent **22 tools** to answer Islamic-finance questions: screen any stock or ETF across **5 methodologies** (AAOIFI, DJIM, FTSE, MSCI, S&P), audit portfolios, calculate **zakat** and **dividend purification**, and pull live market data, news and SEC filings. Works inside **Claude Desktop, Claude Code, Cursor, Windsurf, Cline, Continue, Zed, Goose**, and any other MCP client.
 
 > *"Is AAPL halal?"* · *"Audit my portfolio: AAPL 30%, MSFT 20%, JNJ 50%"* · *"Calculate zakat on my holdings."*
+
+## Quick start
+
+1. **Get a free API key** — email-only signup at [api.halalterminal.com](https://api.halalterminal.com). No credit card. Key arrives in your inbox in seconds.
+2. **Connect your client** — one-liners below (or see [CONNECT.md](CONNECT.md) for Cursor, Windsurf, Cline, and others).
+3. **Ask your first question** — `"Is AAPL halal?"` → the agent calls `screen_stock` and returns verdicts across all 5 methodologies.
 
 ## Install
 
 ```bash
-# Recommended — npx (no install)
+# Recommended — no install needed
 npx -y @halalterminal/mcp
 
 # Or pin globally
 npm install -g @halalterminal/mcp
 ```
 
-Then **get a free API key** at [api.halalterminal.com](https://api.halalterminal.com) (email-only signup, no credit card) and follow [CONNECT.md](CONNECT.md) for your client.
-
-### One-liner: Claude Desktop
+### Claude Desktop
 
 ```json
 {
@@ -35,7 +39,7 @@ Then **get a free API key** at [api.halalterminal.com](https://api.halalterminal
 }
 ```
 
-### One-liner: Claude Code
+### Claude Code
 
 ```bash
 claude mcp add --transport sse halalterminal \
@@ -43,13 +47,13 @@ claude mcp add --transport sse halalterminal \
   --header "X-API-Key: ht_yourkey"
 ```
 
-### One-liner: Cursor / Windsurf / direct SSE
+### Cursor / Windsurf / direct SSE
 
 ```
 https://mcp.halalterminal.com/sse?api_key=ht_yourkey
 ```
 
-Full client guide: [CONNECT.md](CONNECT.md).
+Full setup guide for all clients: [CONNECT.md](CONNECT.md).
 
 ## What you get — 22 tools across 8 categories
 
@@ -68,11 +72,11 @@ Full input/output reference in [TOOLS.md](TOOLS.md). End-to-end prompt walkthrou
 
 ## Why Halal Terminal
 
-- **5 methodologies, one tool.** AAOIFI, DJIM (Dow Jones Islamic Market), FTSE Shariah, MSCI Islamic, and S&P Shariah — each with its own business-activity rules and financial-ratio thresholds, surfaced side-by-side per stock.
-- **Holdings-level ETF screening.** Every underlying constituent is screened, weighted, and aggregated to an overall verdict + a per-dollar purification rate. Works on SPY, QQQ, VTI, ISDU, SPUS, HLAL, and 8,000+ more.
-- **Zakat & purification, computed.** 2.5% zakat against a live nisab threshold; impure-portion calculation per dividend based on the issuer's non-compliant revenue ratio.
-- **Bulk index screens.** Trigger-and-poll runs on the S&P 500, NASDAQ-100, FTSE 100 and friends; filter results by methodology, sector, or compliant-only.
-- **Free tier, no credit card.** Email signup → key in your inbox → ~5–10 full screens per month on the free plan.
+- **5 methodologies, one tool.** AAOIFI, DJIM, FTSE Shariah, MSCI Islamic, and S&P Shariah — each with distinct business-activity rules and financial-ratio thresholds — surfaced side-by-side per stock so users pick the standard they follow.
+- **Holdings-level ETF screening.** Every constituent is screened, weighted, and aggregated into an overall verdict plus a per-dollar purification rate. Covers SPY, QQQ, VTI, ISDU, SPUS, HLAL, and 8,000+ ETFs.
+- **Zakat & purification, computed.** 2.5% zakat against a live nisab threshold; per-dividend impure-income calculation based on the issuer's non-compliant revenue ratio.
+- **Bulk index screens.** Trigger-and-poll runs on the S&P 500, NASDAQ-100, FTSE 100, and others; filter by methodology, sector, or compliant-only.
+- **Free tier, no credit card.** Email signup → key in your inbox in seconds → ~5–10 full screens per month at no cost.
 
 ## Endpoint & transport
 
