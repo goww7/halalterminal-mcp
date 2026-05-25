@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.halalterminal/mcp",
   "title": "Halal Terminal",
-  "description": "Shariah-compliant stock and ETF screening across AAOIFI, DJIM, FTSE, MSCI and S&P methodologies, plus portfolio audit, zakat, dividend purification, market data, news and SEC filings — for any MCP-compatible AI agent.",
+  "description": "22 tools for halal investing: screen stocks and ETFs across 5 Shariah methodologies (AAOIFI, DJIM, FTSE, MSCI, S&P), audit portfolios, calculate zakat and dividend purification, fetch market data, news and SEC filings. Free tier available.",
   "version": "1.0.0",
   "websiteUrl": "https://halalterminal.com",
   "repository": {
