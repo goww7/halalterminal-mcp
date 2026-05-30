@@ -141,6 +141,18 @@ Webhooks are a Pro-plan feature on the API roadmap; v1 of this MCP is request-re
 
 [github.com/goww7/halalterminal-mcp/issues](https://github.com/goww7/halalterminal-mcp/issues) or email yassir@halalterminal.com.
 
+## Learn more
+
+- [API reference](https://api.halalterminal.com/api-reference)
+- [Building an Islamic finance MCP server](https://www.halalterminal.com/blog/posts/islamic-finance-mcp-server)
+- [What is Islamic finance?](https://www.halalterminal.com/research/what-is-islamic-finance)
+- [Sukuk screening guide](https://www.halalterminal.com/research/sukuk-screening)
+- [Is my stock halal? Screener](https://www.halalterminal.com/stocks)
+
+## Part of the Halal Terminal ecosystem
+
+[Website](https://www.halalterminal.com) · [API](https://api.halalterminal.com/api-reference) · [Python SDK](https://github.com/goww7/halalterminal-sdk-python) · [JS SDK](https://github.com/goww7/halalterminal-sdk-js) · [Claude plugin](https://github.com/goww7/halalterminal-claude-skills) · [Discord bot](https://github.com/goww7/halal-discord-bot) · [TradingView indicator](https://github.com/goww7/halal-pine) · [Portfolio tracker](https://github.com/goww7/halal-portfolio-tracker)
+
 ## Related projects (sibling OSS)
 
 Open-source tools that share the same Halal Terminal API — different surfaces, same data:
