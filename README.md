@@ -180,7 +180,7 @@ Apache-2.0 — see [LICENSE](LICENSE).
 ## Support
 
 - Contact: yassir@halalterminal.com
-- Dashboard: [halalterminal.com/dashboard](https://halalterminal.com/dashboard)
+- Dashboard: [api.halalterminal.com/dashboard](https://api.halalterminal.com/dashboard)
 - API docs: [api.halalterminal.com/docs](https://api.halalterminal.com/docs) (Swagger) · [api.halalterminal.com/redoc](https://api.halalterminal.com/redoc) (ReDoc)
 
 ---
