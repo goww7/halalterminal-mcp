@@ -111,7 +111,7 @@ Sign up: [api.halalterminal.com](https://api.halalterminal.com) · Pricing: [hal
 
 ### Is this MCP server free to use?
 
-Yes. The `@halalterminal/mcp` package is Apache-2.0 and free. The Halal Terminal API has a free tier (50 tokens / month, no credit card) that covers ~5–10 full stock screenings — enough to evaluate it before upgrading.
+Yes. The `@halalterminal/mcp` package is Apache-2.0 and free. The Halal Terminal API has a free tier (500 tokens / month, no credit card) that covers ~100 full stock screenings — enough to evaluate it before upgrading.
 
 ### Which AI clients does it work with?
 

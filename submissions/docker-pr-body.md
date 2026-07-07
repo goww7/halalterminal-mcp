@@ -18,7 +18,7 @@ The MCP server runs on Halal Terminal infrastructure and exposes SSE at `https:/
 
 ### Auth
 
-Per-user `X-API-Key` header. Free tier at https://api.halalterminal.com (50 tokens/month, no credit card).
+Per-user `X-API-Key` header. Free tier at https://api.halalterminal.com (500 tokens/month, no credit card).
 
 ### License
 

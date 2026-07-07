@@ -53,7 +53,7 @@ Cursor, Windsurf, Cline, Continue, Zed, Goose).
 • Market data, news, SEC filings — quotes, history, dividends, EDGAR XBRL facts
 • Watchlists, comparisons, generated reports, Islamic-finance education
 
-Free tier: 50 tokens/month, ~5–10 full screens, no credit card. Apache-2.0.
+Free tier: 500 tokens/month, ~100 full screens, no credit card. Apache-2.0.
 Get a key: https://api.halalterminal.com
 ```
 

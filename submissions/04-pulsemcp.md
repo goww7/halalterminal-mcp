@@ -25,7 +25,7 @@
 ## Pitch the curator (free-text "Anything else?")
 
 ```
-The first MCP server purpose-built for Shariah-compliant investing. 1.8B Muslims worldwide, growing demand for halal investing tools, but no MCP coverage today. Free tier (50 tokens/month, no credit card) lets users evaluate before subscribing.
+The first MCP server purpose-built for Shariah-compliant investing. 1.8B Muslims worldwide, growing demand for halal investing tools, but no MCP coverage today. Free tier (500 tokens/month, no credit card) lets users evaluate before subscribing.
 ```
 
 PulseMCP curators sometimes feature standout submissions in their newsletter — make the pitch tight and the differentiator obvious.

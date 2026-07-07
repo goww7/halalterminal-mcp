@@ -13,7 +13,7 @@ What it does:
 - Bulk-screens entire indices (S&P 500, NASDAQ-100, FTSE 100, …)
 - Pulls market data, news, and SEC EDGAR XBRL facts
 
-Apache-2.0 license. Free API tier (50 tokens/month, ~5–10 full screenings, no credit card). Works in Claude Desktop, Claude Code, Cursor, Windsurf, Cline, Continue, Zed, and any other MCP-compatible client.
+Apache-2.0 license. Free API tier (500 tokens/month, ~100 full screenings, no credit card). Works in Claude Desktop, Claude Code, Cursor, Windsurf, Cline, Continue, Zed, and any other MCP-compatible client.
 
 ## Insertion
 
