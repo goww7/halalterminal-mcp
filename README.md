@@ -1,5 +1,7 @@
 # Halal Terminal MCP — Shariah-compliant stock & ETF screening for AI agents
 
+![AAPL halal status](https://api.halalterminal.com/api/badge/AAPL.svg) _live badge from the API, embed one for any symbol_
+
 [![npm version](https://img.shields.io/npm/v/@halalterminal/mcp.svg)](https://www.npmjs.com/package/@halalterminal/mcp)
 [![Apache 2.0](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
 [![MCP](https://img.shields.io/badge/protocol-MCP-purple)](https://modelcontextprotocol.io)
@@ -186,3 +188,9 @@ Apache-2.0 — see [LICENSE](LICENSE).
 ---
 
 Powered by Halal Terminal — [halalterminal.com](https://halalterminal.com)
+
+
+---
+
+Part of the [Halal Terminal open ecosystem](https://github.com/goww7/awesome-islamic-finance):
+[API](https://api.halalterminal.com) · [MCP server](https://github.com/goww7/halalterminal-mcp) · [Python SDK](https://github.com/goww7/halalterminal-sdk-python) · [JS SDK](https://github.com/goww7/halalterminal-sdk-js) · [Datasets](https://github.com/goww7/sp500-shariah-compliance) · [Awesome Islamic Finance](https://github.com/goww7/awesome-islamic-finance)
