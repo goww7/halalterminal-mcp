@@ -1,5 +1,7 @@
 # Halal Terminal MCP — Shariah-compliant stock & ETF screening for AI agents
 
+> [English](README.md) | [العربية](README.ar.md) | [Bahasa Indonesia](README.id.md) | [Melayu](README.ms.md) | [اردو](README.ur.md) | [Français](README.fr.md)
+
 ![AAPL halal status](https://api.halalterminal.com/api/badge/AAPL.svg) _live badge from the API, embed one for any symbol_
 
 [![npm version](https://img.shields.io/npm/v/@halalterminal/mcp.svg)](https://www.npmjs.com/package/@halalterminal/mcp)
