@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "halalterminal": {
+      "command": "npx",
+      "args": ["-y", "@halalterminal/mcp"],
+      "env": { "HALALTERMINAL_API_KEY": "YOUR_API_KEY" }
+    }
+  }
+}
